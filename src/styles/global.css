@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+@theme {
+  /* Disabled Colors */
+  --color-violet-*: initial;
+
+  /* Custom Colors */
+  --color-tan: #f7f6f2;
+}
+
+@layer base {
+  h1 {
+    @apply text-lg font-medium;
+  }
+
+  h2 {
+    @apply text-lg font-medium mb-8;
+  }
+
+  main {
+    @apply pt-16;
+  }
+}
+
+/* Removing spans to obfuscate email */
+.mail-to {
+  display: none;
+}

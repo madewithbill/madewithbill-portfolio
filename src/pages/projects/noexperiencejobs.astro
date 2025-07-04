@@ -1,0 +1,14 @@
+---
+import ProjectHeader from "../../components/ProjectHeader.astro";
+import Layout from "../../layouts/Layout.astro";
+import projects from "../../data/projects.json";
+const projectData = projects["nex"];
+---
+
+<Layout>
+    <ProjectHeader
+        title={projectData.name}
+        description={projectData.description}
+        skills={projectData.skills}
+    />
+</Layout>

@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+const { src } = Astro.props;
+const { alt } = Astro.props;
+const { heading } = Astro.props;
+const { description } = Astro.props;
+const { link } = Astro.props;
+---
+
+<article class="relative basis-3xs mb-8">
+  <!-- <img
+    class="aspect-4/3 object-cover rounded-lg mb-4"
+    src="/images/custem-journeys/custem-journeys-website-hero-light.avif"
+    alt="Homepage hero thumbnail for the cuSTEM Journeys website"
+  /> -->
+  <Image
+    class="aspect-4/3 object-cover rounded-lg mb-4"
+    src={src}
+    alt={alt}
+    format="avif"
+  />
+  <h3>{heading}</h3>
+  <p class="text-neutral-500">{description}</p>
+  <a class="absolute size-full top-0 left-0 z-10" href={link}></a>
+</article>

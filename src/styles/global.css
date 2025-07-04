@@ -17,6 +17,10 @@
     @apply text-lg font-medium mb-8;
   }
 
+  p {
+    @apply mb-2;
+  }
+
   main {
     @apply pt-16;
   }

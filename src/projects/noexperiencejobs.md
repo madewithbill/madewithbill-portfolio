@@ -9,27 +9,27 @@ skills:
 - Make.com
 siteURL: https://www.noexperiencejobs.io/
 thumbnail:
-  src: "/src/projects/images/nex/nex-jobs-website-hero-light.avif"
+  src: "./images/nex/nex-jobs-website-hero-light.jpg"
   alt: "Homepage hero thumbnail for the NoExperienceJobs.io website."
 heroImage:
-  src: "/src/projects/images/nex/nex-jobs-website-homepage-desktop.avif"
+  src: "./images/nex/nex-jobs-website-homepage-desktop.jpg"
   alt: "A laptop show the homepage for NoExperienceJobs.io sits on a wooden table in a living room"
 images:
-- src: "/src/projects/images/nex/nex-website-captures.avif"
+- src: "./images/nex/nex-website-captures.jpg"
   alt: "Screenshots showcasing various pages of the NoExperienceJobs.io website design"
-- src: "/src/projects/images/nex/nex-jobs-billboard-sidewalk.avif"
+- src: "./images/nex/nex-jobs-billboard-sidewalk.jpg"
   alt: "Large outdoor billboard advertisement for NoExperienceJobs.io positioned on a city sidewalk"
-- src: "/src/projects/images/nex/nex-jobs-social-media-carousel.avif"
+- src: "./images/nex/nex-jobs-social-media-carousel.jpg"
   alt: "Social media carousel post design for NoExperienceJobs.io, adversting entry-level job opportunities"
-- src: "/src/projects/images/nex/nex-jobs-social-media-template-designs.avif"
+- src: "./images/nex/nex-jobs-social-media-template-designs.jpg"
   alt: "Collection of social media template designs for the NoExperienceJobs.io brand"
-- src: "/src/projects/images/nex/nex-jobs-stationery-letterhead.avif"
+- src: "./images/nex/nex-jobs-stationery-letterhead.jpg"
   alt: "NoExperienceJobs.io branded stationery and letterhead design"
-- src: "/src/projects/images/nex/nex-jobs-event-signage.avif"
+- src: "./images/nex/nex-jobs-event-signage.jpg"
   alt: "Event sign for NoExperienceJobs.io"
-- src: "/src/projects/images/nex/nex-jobs-event-banner.avif"
+- src: "./images/nex/nex-jobs-event-banner.jpg"
   alt: "Event banner design featuring NoExperienceJobs.io brand pattern elements"
-- src: "/src/projects/images/nex/nex-jobs-favicon-sticker-seal.avif"
+- src: "./images/nex/nex-jobs-favicon-sticker-seal.jpg"
   alt: "The NoExperienceJobs.io favicon on sticker seal for an envelope"
 ---
 

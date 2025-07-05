@@ -8,15 +8,15 @@ skills:
 - Relume
 siteURL: https://mwb-trainer-demo.webflow.io/
 thumbnail:
-  src: "/src/projects/images/trainer-demo/trainer-demo-website-hero-light.avif"
+  src: "./images/trainer-demo/trainer-demo-website-hero-light.jpg"
   alt: "Homepage hero thumbnail for a fitness trainer landing page."
 heroImage:
-  src: "/src/projects/images/trainer-demo/trainer-demo-homepage-hero-laptop.avif"
+  src: "./images/trainer-demo/trainer-demo-homepage-hero-laptop.jpg"
   alt: "A laptop showing the homepage of the fitness trainer website"
 images:
-- src: "/src/projects/images/trainer-demo/trainer-demo-website-captures.avif"
+- src: "./images/trainer-demo/trainer-demo-website-captures.jpg"
   alt: "Screenshots showcasing sections of the fitness trainer landing page"
-- src: "/src/projects/images/trainer-demo/trainer-demo-website-homepage-mobile.avif"
+- src: "./images/trainer-demo/trainer-demo-website-homepage-mobile.jpg"
   alt: "Screenshots showing the mobile responsiveness of the fitness trainer landing page"
 ---
 

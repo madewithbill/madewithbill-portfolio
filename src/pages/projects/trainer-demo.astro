@@ -12,10 +12,9 @@ import { Image } from "astro:assets";
         <Image
             class="w-full h-70 object-cover rounded-md mb-8"
             height="100%"
-            width="100%"
+            width="1200"
             src={ProjectData.data.heroImage.src}
             alt={ProjectData.data.heroImage.alt}
-            format="avif"
         />
         <h1>{ProjectData.data.title}</h1>
         <p class="text-gray-500 mb-4">{ProjectData?.data.description}</p>
@@ -47,16 +46,15 @@ import { Image } from "astro:assets";
                 </svg>
             </button>
         </div>
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-4">
             {
                 ProjectData.data.images.map((image) => (
                     <Image
                         class="w-full h-80 object-cover rounded-md"
                         height="100%"
-                        width="100%"
+                        width="1200"
                         src={image.src}
                         alt={image.alt}
-                        format="avif"
                     />
                 ))
             }

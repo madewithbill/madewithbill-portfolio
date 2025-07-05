@@ -8,15 +8,15 @@ skills:
 - GSAP
 siteURL: https://www.detect.com/
 thumbnail:
-  src: "/src/projects/images/detect/detect-website-hero-light.avif"
+  src: "./images/detect/detect-website-hero-light.jpg"
   alt: "Homepage hero thumbnail for the Detect website."
 heroImage:
-  src: "/src/projects/images/detect/detect-website-homepage-hero-desktop.avif"
+  src: "./images/detect/detect-website-homepage-hero-desktop.jpg"
   alt: "A laptop sitting on a countertop shows the Detect website homepage"
 images:
-- src: "/src/projects/images/detect/detect-website-captures.avif"
+- src: "./images/detect/detect-website-captures.jpg"
   alt: "Screenshots showcasing various pages of the Detect website"
-- src: "/src/projects/images/detect/detect-website-captures-mobile.avif"
+- src: "./images/detect/detect-website-captures-mobile.jpg"
   alt: "Screenshots showing the mobile responsiveness of the Detect website"
 ---
 

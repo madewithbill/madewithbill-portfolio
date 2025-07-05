@@ -9,9 +9,14 @@ const projects = defineCollection({
   loader: glob({ pattern: "*.md", base: "src/projects" }),
   schema: z.object({
     title: z.string(),
+    metaDescription: z.string(),
     description: z.string(),
     skills: z.array(z.string()),
     siteURL: z.string(),
+    thumbnail:z.object({
+        src: z.string(),
+        alt: z.string()
+      }),
     heroImage:z.object({
         src: z.string(),
         alt: z.string()

@@ -1,12 +1,23 @@
 ---
-import Welcome from "../components/Welcome.astro";
+// import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
-import "../styles/global.css";
-import CJHero from "../projects/images/custem-journeys/custem-journeys-homepage-mobile-mockup.avif";
-import NexHero from "../projects/images/nex/nex-jobs-website-hero-light.avif";
-import DetectHero from "../projects/images/detect/detect-website-hero-light.avif";
-import TrainerHero from "../projects/images/trainer-demo/trainer-demo-website-hero-light.avif";
+import { getCollection } from "astro:content";
+const ProjectData = await getCollection("projects");
+const custemJourneys = ProjectData.find(
+  (entry) => entry.id === "custem-journeys",
+);
+const noExperienceJobs = ProjectData.find(
+  (entry) => entry.id === "noexperiencejobs",
+);
+const detect = ProjectData.find((entry) => entry.id === "detect");
+const trainerDemo = ProjectData.find((entry) => entry.id === "trainer-demo");
+
+// import "../styles/global.css";
+// import CJHero from "../projects/images/custem-journeys/custem-journeys-homepage-mobile-mockup.avif";
+// import NexHero from "../projects/images/nex/nex-jobs-website-hero-light.avif";
+// import DetectHero from "../projects/images/detect/detect-website-hero-light.avif";
+// import TrainerHero from "../projects/images/trainer-demo/trainer-demo-website-hero-light.avif";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -27,35 +38,35 @@ import TrainerHero from "../projects/images/trainer-demo/trainer-demo-website-he
     <div class="w-full md:flex md:flex-wrap gap-6">
       <!-- cuSTEM Journeys -->
       <ProjectCard
-        src={CJHero}
-        alt=""
-        heading="CJ component test"
-        description="this is an asto component"
-        link="nfl.com"
+        src={custemJourneys?.data.thumbnail.src}
+        alt={custemJourneys?.data.thumbnail.alt}
+        heading={custemJourneys?.data.title}
+        description={custemJourneys?.data.description}
+        projectLink="./projects/custem-journeys"
       />
       <!-- Nex Jobs -->
       <ProjectCard
-        src={NexHero}
-        alt=""
-        heading="NoExperienceJobs.io (Nex)"
-        description="Branding and Web Design"
-        link="google.com"
+        src={noExperienceJobs?.data.thumbnail.src}
+        alt={noExperienceJobs?.data.thumbnail.alt}
+        heading={noExperienceJobs?.data.title}
+        description={noExperienceJobs?.data.description}
+        projectLink="./projects/noexperiencejobs"
       />
       <!-- Detect.com -->
       <ProjectCard
-        src={DetectHero}
-        alt=""
-        heading="Detect"
-        description="Web Design"
-        link="apple.com"
+        src={detect?.data.thumbnail.src}
+        alt={detect?.data.thumbnail.alt}
+        heading={detect?.data.title}
+        description={detect?.data.description}
+        projectLink="./projects/detect"
       />
       <!-- Trainer Demo -->
       <ProjectCard
-        src={TrainerHero}
-        alt=""
-        heading="Trainer Landing Page (Demo)"
-        description="Web Design"
-        link="theverge.com"
+        src={trainerDemo?.data.thumbnail.src}
+        alt={trainerDemo?.data.thumbnail.alt}
+        heading={trainerDemo?.data.title}
+        description={trainerDemo?.data.description}
+        projectLink="./projects/trainer-demo"
       />
     </div>
   </section>

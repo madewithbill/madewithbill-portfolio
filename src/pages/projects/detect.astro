@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { getEntry, render } from "astro:content";
-const ProjectData = await getEntry("projects", "noexperiencejobs");
+const ProjectData = await getEntry("projects", "detect");
 // Call render() with the ProjectData entry
 const { Content } = await render(ProjectData);
 import { Image } from "astro:assets";

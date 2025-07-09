@@ -32,10 +32,11 @@ import { Image } from "astro:assets";
     <section class="py-8">
         <div class="mb-10">
             <Content />
-            <button class="flex items-center gap-1 font-medium mt-4">
-                <a href={ProjectData.data.siteURL} target="_blank"
-                    >Visit Website</a
-                >
+            <a
+                class="flex items-center gap-1 font-medium mt-4"
+                href={ProjectData.data.siteURL}
+                target="_blank"
+                >Visit Website
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -47,7 +48,7 @@ import { Image } from "astro:assets";
                         d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"
                     ></path>
                 </svg>
-            </button>
+            </a>
         </div>
         <div class="flex flex-col gap-4">
             {

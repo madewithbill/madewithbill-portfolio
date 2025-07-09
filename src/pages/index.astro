@@ -17,7 +17,9 @@ const trainerDemo = ProjectData.find((entry) => entry.id === "trainer-demo");
   metaDescription="Bill Utaegbulam is a creative web designer and developer based in Irvine, California, specializing in Webflow and digital brand identities for small businesses."
   title="madewithbill. - Creative Web Development"
 >
-  <!-- <Welcome /> -->
+  <!-- Head Slot -->
+  <link rel="sitemap" href="/sitemap-index.xml" slot="head" />
+  <!-- Main Slot -->
   <header class="py-4">
     <h1>Bill Utaegbulam</h1>
     <p class="mb-5">Creative Developer</p>

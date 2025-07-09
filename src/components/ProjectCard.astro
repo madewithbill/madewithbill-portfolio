@@ -5,6 +5,7 @@ const { alt } = Astro.props;
 const { heading } = Astro.props;
 const { description } = Astro.props;
 const { projectLink } = Astro.props;
+const { ariaLabel } = Astro.props;
 ---
 
 <article class="relative basis-3xs mb-8">
@@ -17,5 +18,8 @@ const { projectLink } = Astro.props;
   />
   <h3>{heading}</h3>
   <p class="text-neutral-500">{description}</p>
-  <a class="absolute size-full top-0 left-0 z-10" href={projectLink}></a>
+  <a
+    class="absolute size-full top-0 left-0 z-10"
+    href={projectLink}
+    aria-label={ariaLabel}></a>
 </article>

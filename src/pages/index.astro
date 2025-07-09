@@ -1,5 +1,4 @@
 ---
-// import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import { getCollection } from "astro:content";
@@ -12,15 +11,6 @@ const noExperienceJobs = ProjectData.find(
 );
 const detect = ProjectData.find((entry) => entry.id === "detect");
 const trainerDemo = ProjectData.find((entry) => entry.id === "trainer-demo");
-
-// import "../styles/global.css";
-// import CJHero from "../projects/images/custem-journeys/custem-journeys-homepage-mobile-mockup.avif";
-// import NexHero from "../projects/images/nex/nex-jobs-website-hero-light.avif";
-// import DetectHero from "../projects/images/detect/detect-website-hero-light.avif";
-// import TrainerHero from "../projects/images/trainer-demo/trainer-demo-website-hero-light.avif";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout
@@ -46,6 +36,7 @@ const trainerDemo = ProjectData.find((entry) => entry.id === "trainer-demo");
         heading={custemJourneys?.data.title}
         description={custemJourneys?.data.description}
         projectLink="./projects/custem-journeys"
+        ariaLabel="See project details for cuSTEM Journeys"
       />
       <!-- Nex Jobs -->
       <ProjectCard
@@ -54,6 +45,7 @@ const trainerDemo = ProjectData.find((entry) => entry.id === "trainer-demo");
         heading={noExperienceJobs?.data.title}
         description={noExperienceJobs?.data.description}
         projectLink="./projects/noexperiencejobs"
+        ariaLabel="See project details for NoExperienceJobs.io"
       />
       <!-- Detect.com -->
       <ProjectCard
@@ -62,6 +54,7 @@ const trainerDemo = ProjectData.find((entry) => entry.id === "trainer-demo");
         heading={detect?.data.title}
         description={detect?.data.description}
         projectLink="./projects/detect"
+        ariaLabel="See project details for Detect.com"
       />
       <!-- Trainer Demo -->
       <ProjectCard
@@ -70,6 +63,7 @@ const trainerDemo = ProjectData.find((entry) => entry.id === "trainer-demo");
         heading={trainerDemo?.data.title}
         description={trainerDemo?.data.description}
         projectLink="./projects/trainer-demo"
+        ariaLabel="See project details for the fitness trainer Webflow demo project"
       />
     </div>
   </section>

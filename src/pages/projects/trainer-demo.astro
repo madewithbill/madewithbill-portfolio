@@ -7,7 +7,10 @@ const { Content } = await render(ProjectData);
 import { Image } from "astro:assets";
 ---
 
-<Layout title={`${ProjectData?.data.title} ${ProjectData?.data.description}`}>
+<Layout
+    metaDescription={ProjectData?.data.metaDescription}
+    title={ProjectData?.data.title}
+>
     <header>
         <Image
             class="w-full h-70 object-cover rounded-md mb-8"

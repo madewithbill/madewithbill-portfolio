@@ -28,5 +28,3 @@ transitioned to a "from-scratch" build in Webflow for greater component control
 and simpler structures with less nesting.
 
 This project currently exists as an ongoing playground of sorts as I test out Webflow's newest features – like the GSAP timeline – and custom code solutions such as CSS animations to extend functionality beyond the platform's built-in feature set.
-
-

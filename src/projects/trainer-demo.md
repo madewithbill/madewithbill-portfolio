@@ -20,10 +20,13 @@ images:
   alt: "Screenshots showing the mobile responsiveness of the fitness trainer landing page"
 ---
 
-Homepage demo designed in Figma and built in Webflow, using
-Finsweet's Client-First styling framework. I initially experimented
-with Relume to iterate on the sitemap and wireframe before
-transitioning to a from-scratch build in Webflow for greater control
-and a structure with less nesting. I also used custom code alongside
-the Swiper JavaScript library for additional design elements and
-functionality beyond Webflow's built-in feature set.
+A demo project for a personal trainer, designed in Figma and developed in Webflow. 
+
+Here, I'm using Finsweet's Client-First styling framework. I experimented
+with Relume's AI tools to ideate on the sitemap and wireframe the initial layout, but
+transitioned to a "from-scratch" build in Webflow for greater component control
+and simpler structures with less nesting.
+
+This project currently exists as an ongoing playground of sorts as I test out Webflow's newest features – like the GSAP timeline – and custom code solutions such as CSS animations to extend functionality beyond the platform's built-in feature set.
+
+

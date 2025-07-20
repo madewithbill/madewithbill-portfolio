@@ -1,10 +1,19 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { getEntry, render } from "astro:content";
-const ProjectData = await getEntry("projects", "custem-journeys");
+const ProjectData = await getEntry("projects", Astro.params.project);
 // Call render() with the ProjectData entry
 const { Content } = await render(ProjectData);
 import { Image } from "astro:assets";
+
+export function getStaticPaths() {
+    return [
+        { params: { project: "custem-journeys" } },
+        { params: { project: "detect" } },
+        { params: { project: "noexperiencejobs" } },
+        { params: { project: "trainer-demo" } },
+    ];
+}
 ---
 
 <Layout

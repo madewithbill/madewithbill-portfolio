@@ -1,5 +1,7 @@
 /work/projects/:splat /projects/:splat 301
+/projects/:splat.html /projects/:splat 301
 /projects/rivian / 301
 /projects/sales-meeting-generator / 301
 /projects/binned / 301
+/work/nex /projects/noexperiencejobs 301
 /services/* / 301

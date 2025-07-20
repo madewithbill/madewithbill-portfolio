@@ -12,6 +12,7 @@ export function getStaticPaths() {
         { params: { project: "detect" } },
         { params: { project: "noexperiencejobs" } },
         { params: { project: "trainer-demo" } },
+        { params: { project: "scholariq" } },
     ];
 }
 ---
@@ -41,24 +42,28 @@ export function getStaticPaths() {
     <section class="py-8">
         <div class="mb-10">
             <Content />
-            <a
-                class="flex items-center gap-1 font-medium mt-4"
-                href={ProjectData.data.siteURL}
-                target="_blank"
-                rel="noopener"
-                >Visit Website
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    viewBox="0 0 256 256"
-                >
-                    <path
-                        d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"
-                    ></path>
-                </svg>
-            </a>
+            {
+                ProjectData?.data.siteURL && (
+                    <a
+                        id="visit-link"
+                        class="flex items-center gap-1 font-medium mt-4"
+                        href={ProjectData.data.siteURL}
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Visit Website
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            viewBox="0 0 256 256"
+                        >
+                            <path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z" />
+                        </svg>
+                    </a>
+                )
+            }
         </div>
         <div class="flex flex-col gap-4">
             {

@@ -12,7 +12,7 @@ const projects = defineCollection({
     metaDescription: z.string(),
     description: z.string(),
     skills: z.array(z.string()),
-    siteURL: z.string(),
+    siteURL: z.string().optional(),
     thumbnail:z.object({
         src: image(),
         alt: z.string()

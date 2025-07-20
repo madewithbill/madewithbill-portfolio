@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 const { title } = Astro.props;
 const { metaDescription } = Astro.props;
+const canonical = Astro.request.url;
 ---
 
 <!doctype html>
@@ -11,10 +12,11 @@ const { metaDescription } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<title>{title}</title>
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={metaDescription} />
-		<title>{title}</title>
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<link rel="canonical" href={canonical} />
 		<slot name="head" />
 	</head>
 	<body class="max-w-xl mx-auto px-4 bg-neutral-50">

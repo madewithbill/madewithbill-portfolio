@@ -26,6 +26,10 @@
   }
 }
 
+.animate-gsap {
+  visibility: hidden;
+}
+
 /* Removing spans to obfuscate email */
 .mail-to {
   display: none;

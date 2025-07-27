@@ -1,9 +1,7 @@
 import { gsap } from "gsap";
 
-const body = document.querySelectorAll('*')
- 
- document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.from(body, { y: 20, opacity: 0, duration: .75, })
- });
+const chunk = document.getElementsByClassName('animate-gsap')
 
- console.log('hello')
+ document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.from(chunk, { y: 20, opacity: 0, duration: .75, stagger: .2, autoAlpha: 0 })
+ });

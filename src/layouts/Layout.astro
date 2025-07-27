@@ -18,6 +18,13 @@ const canonical = Astro.request.url;
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<link rel="canonical" href={canonical} />
 		<slot name="head" />
+		<noscript>
+			<style>
+				.animate-gsap {
+					visibility: visible !important;
+				}
+			</style>
+		</noscript>
 	</head>
 	<body class="max-w-xl mx-auto px-4 bg-neutral-50">
 		<Navbar />

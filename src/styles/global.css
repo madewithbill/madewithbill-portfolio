@@ -14,7 +14,7 @@
   }
 
   h2 {
-    @apply text-lg font-medium mb-8;
+    @apply text-lg font-medium mb-4;
   }
 
   p {
